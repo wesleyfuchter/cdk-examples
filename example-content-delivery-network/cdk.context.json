@@ -1,0 +1,10 @@
+{
+  "hosted-zone:account=767998996104:domainName=wesleyfuchter.com:region=us-east-1": {
+    "Id": "/hostedzone/Z07136871V1BYEYODKHNO",
+    "Name": "wesleyfuchter.com."
+  },
+  "hosted-zone:account=760736027183:domainName=wesleyfuchter.com:region=us-east-1": {
+    "Id": "/hostedzone/Z04414372K355K8DP9L5R",
+    "Name": "wesleyfuchter.com."
+  }
+}

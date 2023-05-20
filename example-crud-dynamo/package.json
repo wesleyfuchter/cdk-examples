@@ -1,0 +1,24 @@
+{
+  "name": "example-crud-dynamo",
+  "version": "0.1.0",
+  "bin": {
+    "example-crud-dynamo": "bin/example-crud-dynamo.js"
+  },
+  "scripts": {
+    "build": "echo \"The build step is not required when using JavaScript!\" && exit 0",
+    "cdk": "cdk",
+    "test": "jest",
+    "deploy": "cdk deploy --require-approval never",
+    "bootstrap": "cdk bootstrap",
+    "destroy": "cdk destroy --require-approval never"
+  },
+  "devDependencies": {
+    "aws-cdk": "2.70.0",
+    "jest": "^29.5.0"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.1380.0",
+    "aws-cdk-lib": "2.70.0",
+    "constructs": "^10.0.0"
+  }
+}

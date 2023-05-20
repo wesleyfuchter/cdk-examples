@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User List</title>
+    <script>
+        fetch('https://xevq2eurza.execute-api.us-east-1.amazonaws.com/prod/users')
+            .then(response => response.json())
+            .then(data => {
+                const userList = document.getElementById('userList');
+                data.Items.forEach(item => {
+                    const userItem = document.createElement('li');
+                    userItem.textContent = `Username: ${item.username}, ID: ${item.id}, Age: ${item.age}`;
+                    userList.appendChild(userItem);
+                });
+            })
+            .catch(error => {
+                console.log('Error fetching user data:', error);
+            });
+    </script>
+</head>
+<body>
+<h1>User List</h1>
+<ul id="userList"></ul>
+</body>
+</html>
